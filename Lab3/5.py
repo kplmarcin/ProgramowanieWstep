@@ -8,8 +8,15 @@ suma = 0
 
 suma = 0
 n = int(input("Liczba studentów:"))
-while True:
-    x = int(input("Punkty:"))
-    suma += x
-    print(suma)
-print(suma//n)
+x = 1 #liczba od której zaczniemy liczyć
+suma = 0 #suma punktów
+
+while (x<=n):
+    print("Proszę podać liczbę punktów:", x, end=' ')
+    b = int(input())
+    x=x+1
+    suma=suma+b
+z = suma/x
+print("Średnia liczba punktów:" , z)
+
+
